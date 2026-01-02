@@ -66,7 +66,7 @@ public class Basic {
         System.out.println(num1 + " mod " + num2 + " = "  + mod);*/
 
         //MULTIPLICATION TABLE
-        int num, i, prod;
+        /*int num, i, prod;
 
         System.out.print("Input a number: ");
         num = input.nextInt();
@@ -74,10 +74,17 @@ public class Basic {
         for ( i = 20; i >= 1; i-- ) {
             prod = num * i;
             System.out.println(num + " x " + i + " = " + prod);
-        }
+        }*/
 
-    
         //PATTERN DISPLAY: JAVA
+    ;
+        System.out.print("Choose a letter: ");
+        char choice = input.next().charAt(0);
+        //String choice = input.nextLine();
+        System.out.println("   J    " + choice +  "   v     v   " + choice );
+        System.out.println("   J   a a   v   v   a a");
+        System.out.println("J  J  aaaaa   V V   aaaaa"); 
+        System.out.println(" JJ  a     a   V   a     a");     
 
         
         
