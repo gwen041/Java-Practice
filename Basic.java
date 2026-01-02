@@ -71,11 +71,15 @@ public class Basic {
         System.out.print("Input a number: ");
         num = input.nextInt();
 
-        for ( i = 1; i <= 10; i++ ) {
+        for ( i = 20; i >= 1; i-- ) {
             prod = num * i;
             System.out.println(num + " x " + i + " = " + prod);
-
         }
+
+    
+        //PATTERN DISPLAY: JAVA
+
+        
         
 
 
