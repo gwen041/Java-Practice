@@ -41,11 +41,10 @@ public class Basic {
         num2 = input.nextInt();
 
         prod = num1 * num2;
-        
         System.out.println(num1 + " x "  + num2 + " = " + prod);*/
 
         //BASIC ARITH OPERATIONS
-        int num1, num2;
+        /*int num1, num2;
         int sum, diff, prod, quot, mod;
     
         System.out.print("Input first num: ");
@@ -64,7 +63,20 @@ public class Basic {
         System.out.println(num1 + " - " + num2 + " = "  + diff);
         System.out.println(num1 + " x " + num2 + " = "  + prod);
         System.out.println(num1 + " / " + num2 + " = "  + quot);
-        System.out.println(num1 + " mod " + num2 + " = "  + mod);
+        System.out.println(num1 + " mod " + num2 + " = "  + mod);*/
+
+        //MULTIPLICATION TABLE
+        int num, i, prod;
+
+        System.out.print("Input a number: ");
+        num = input.nextInt();
+
+        for ( i = 1; i <= 10; i++ ) {
+            prod = num * i;
+            System.out.println(num + " x " + i + " = " + prod);
+
+        }
+        
 
 
 
