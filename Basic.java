@@ -32,8 +32,7 @@ public class Basic {
         System.out.println(result1 + "\n" + result2 + "\n" + result3 + "\n" + result4);*/
 
         //PRODUCT OF TWO NUMS
-
-        int num1, num2, prod;
+        /*int num1, num2, prod;
     
         System.out.print("Input first number: ");
         num1 = input.nextInt();
@@ -43,7 +42,29 @@ public class Basic {
 
         prod = num1 * num2;
         
-        System.out.println(num1 + " x "  + num2 + " = " + prod);
+        System.out.println(num1 + " x "  + num2 + " = " + prod);*/
+
+        //BASIC ARITH OPERATIONS
+        int num1, num2;
+        int sum, diff, prod, quot, mod;
+    
+        System.out.print("Input first num: ");
+        num1 = input.nextInt();
+        
+        System.out.print("Input second num: ");
+        num2 = input.nextInt();
+
+        sum = num1 + num2;
+        diff = num1 - num2;
+        prod = num1 * num2;
+        quot = num1 / num2;
+        mod = num1 % num2;
+
+        System.out.println(num1 + " + " + num2 + " = "  + sum);
+        System.out.println(num1 + " - " + num2 + " = "  + diff);
+        System.out.println(num1 + " x " + num2 + " = "  + prod);
+        System.out.println(num1 + " / " + num2 + " = "  + quot);
+        System.out.println(num1 + " mod " + num2 + " = "  + mod);
 
 
 
