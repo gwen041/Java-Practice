@@ -107,19 +107,16 @@ public class Basic {
 
 
         //AREA PERIMETER: CIRCLE
-        CircleForm circle = new CircleForm();
-        double rad;
-
+       
         System.out.print("Enter radius of circle: ");
-        rad = scan.nextDouble();
+        Circle circleForm = new Circle(scan.nextDouble());
 
-        circle.calculateCircle(rad);
-        
-        /*area = Math.PI * (rad * rad);
-        peri = 2 * Math.PI * rad;*/
+        circleForm.calculateCircle();
 
-        System.out.println("Perimeter is = " + circle.peri);
-        System.out.println("Area is = " + circle.area);
+        System.out.println("Perimeter is = " + circleForm.peri);
+        System.out.println("Area is = " + circleForm.area);
+
+
 
 
 
