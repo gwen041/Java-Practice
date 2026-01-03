@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Basic {
     static Scanner input = new Scanner(System.in);
+    static Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
         /*String name = "Gwen Tabios";
@@ -77,18 +78,38 @@ public class Basic {
         }*/
 
         //PATTERN DISPLAY: JAVA
-    ;
-        System.out.print("Choose a letter: ");
+        /*System.out.print("Choose a letter: ");
         char choice = input.next().charAt(0);
         //String choice = input.nextLine();
         System.out.println("   J    " + choice +  "   v     v   " + choice );
         System.out.println("   J   a a   v   v   a a");
         System.out.println("J  J  aaaaa   V V   aaaaa"); 
-        System.out.println(" JJ  a     a   V   a     a");     
+        System.out.println(" JJ  a     a   V   a     a");*/
 
+        //EXPRESSION EVAL
+        double x, y, z, w;
+        System.out.println("((x * y - y * y) / (z - w))");
+        System.out.print("Enter value for x: ");
+        x = scan.nextDouble();
+
+        System.out.print("Enter value for y: ");
+        y = scan.nextDouble();
+        
+        System.out.print("Enter value for z: ");
+        z = scan.nextDouble();
+
+        System.out.print("Enter value for w: ");
+        w = scan.nextDouble();
         
         
+        //double x = 25.5, y = 3.5, z = 40.5, w = 4.5;
+        double result = ((x * y - y * y) / (z - w));
+        System.out.println(result);
 
+    
+        
+        
+ 
 
 
 
