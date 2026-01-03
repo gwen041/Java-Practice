@@ -108,13 +108,33 @@ public class Basic {
 
         //AREA PERIMETER: CIRCLE
        
-        System.out.print("Enter radius of circle: ");
+        /*System.out.print("Enter radius of circle: ");
         Circle circleForm = new Circle(scan.nextDouble());
 
         circleForm.calculateCircle();
 
         System.out.println("Perimeter is = " + circleForm.peri);
-        System.out.println("Area is = " + circleForm.area);
+        System.out.println("Area is = " + circleForm.area);*/
+
+        //COMPUTE AVG
+        double sum = 0, avg;
+        System.out.print("Enter three numbers (with spaces): ");
+        int[] nums = new int[3];
+
+        nums[0] = scan.nextInt();
+        nums[1] = scan.nextInt();
+        nums[2] = scan.nextInt();
+
+        int nlength = nums.length;
+
+        for (int i = 0; i < nlength; i++) {
+            sum += nums[i];
+        }
+
+        avg = sum / nlength;
+        System.out.println("The Average is " + avg);
+
+        
 
 
 
