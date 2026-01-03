@@ -87,7 +87,7 @@ public class Basic {
         System.out.println(" JJ  a     a   V   a     a");*/
 
         //EXPRESSION EVAL
-        double x, y, z, w;
+        /*double x, y, z, w;
         System.out.println("((x * y - y * y) / (z - w))");
         System.out.print("Enter value for x: ");
         x = scan.nextDouble();
@@ -101,10 +101,33 @@ public class Basic {
         System.out.print("Enter value for w: ");
         w = scan.nextDouble();
         
-        
         //double x = 25.5, y = 3.5, z = 40.5, w = 4.5;
         double result = ((x * y - y * y) / (z - w));
-        System.out.println(result);
+        System.out.println(result);*/
+
+
+        //AREA PERIMETER: CIRCLE
+        CircleForm circle = new CircleForm();
+        double rad;
+
+        System.out.print("Enter radius of circle: ");
+        rad = scan.nextDouble();
+
+        circle.calculateCircle(rad);
+        
+        /*area = Math.PI * (rad * rad);
+        peri = 2 * Math.PI * rad;*/
+
+        System.out.println("Perimeter is = " + circle.peri);
+        System.out.println("Area is = " + circle.area);
+
+
+
+
+        
+
+        
+        
 
     
         
