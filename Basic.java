@@ -117,13 +117,17 @@ public class Basic {
         System.out.println("Area is = " + circleForm.area);*/
 
         //COMPUTE AVG
+        int n;
         double sum = 0, avg;
-        System.out.print("Enter three numbers (with spaces): ");
-        int[] nums = new int[3];
+        System.out.print("How many inputs would you like to enter? : ");
+        n = scan.nextInt();
+        int[] nums = new int[n];
 
-        nums[0] = scan.nextInt();
-        nums[1] = scan.nextInt();
-        nums[2] = scan.nextInt();
+        System.out.print("Enter " + n + " numbers (with spaces): ");
+        
+        for (int i = 0; i < n; i++) {
+            nums[i] = scan.nextInt();
+        }
 
         int nlength = nums.length;
 
