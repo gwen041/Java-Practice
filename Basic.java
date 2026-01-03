@@ -123,10 +123,12 @@ public class Basic {
         n = scan.nextInt();
         int[] nums = new int[n];
 
-        System.out.print("Enter " + n + " numbers (with spaces): ");
+        //System.out.print("Enter " + n + " numbers (with spaces): ");
         
         for (int i = 0; i < n; i++) {
+            System.out.print("Enter number " + (i + 1) + ": ");
             nums[i] = scan.nextInt();
+            
         }
 
         int nlength = nums.length;
