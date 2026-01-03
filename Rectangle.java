@@ -1,5 +1,26 @@
 public class Rectangle {
-    static double calcArea(double l, double w) {
+    double l, w, area, peri;
+
+    public Rectangle(double l, double w) {
+        this.l = l;
+        this.w = w;
+    }
+
+    public void calcArea() {
+        area = l * w; 
+        System.out.printf("\nArea is = %.2f \n", area);
+    }
+
+    public void calcPeri() {
+        peri = 2 * (l + w);
+        System.out.printf("Perimeter is = %.2f \n\n", peri);
+    }
+
+
+
+
+
+    /*static double calcArea(double l, double w) {
         double area = l * w;
         return area;
     }
@@ -8,5 +29,5 @@ public class Rectangle {
         double peri = 2 * (l + w);
         return peri;
 
-    }
+    }*/
 }

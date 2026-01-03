@@ -139,8 +139,8 @@ public class Basic {
         System.out.println("The Average is " + avg);*/
 
     //AREA PERIMETER: RECTANGLE
-        double l, w, area, peri;
-        //Rectangle rFormula = new Rectangle();
+        /*double l, w, area, peri;
+      
         System.out.print("Enter length of rectangle: ");
         l = scan.nextDouble();
         System.out.print("Enter width of rectangle: ");
@@ -149,10 +149,20 @@ public class Basic {
         area = Rectangle.calcArea(l, w);
         peri = Rectangle.calcPeri(l, w);
 
-        //System.out.println("Area is = " + area);
-        //System.out.println("Perimeter is = " + peri);
         System.out.printf("Area is = %.2f \n ", area);
-        System.out.printf("Perimeter is = %.1f ", peri);
+        System.out.printf("Perimeter is = %.2f ", peri);*/
+
+        //Using object
+        System.out.print("Enter the length: ");
+        double l = scan.nextDouble();
+        System.out.print("Enter the width: ");
+        double w = scan.nextDouble();
+
+        Rectangle rFormula = new Rectangle(l, w);
+        rFormula.calcArea();
+        rFormula.calcPeri();
+
+
 
 
 
