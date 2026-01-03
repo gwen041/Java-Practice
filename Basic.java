@@ -10,18 +10,18 @@ public class Basic {
         System.out.print(name);
         System.out.println("Hello\n" + name);*/
 
-        //Addition of two nums
+    //Addition of two nums
         /*int num1 = 74, num2 = 36;
         int sum = num1 + num2;
         System.out.println("Sum is " + sum);
         System.out.println("Sum is " + (num1 + num2));*/
 
-        //Division of two nums
+    //Division of two nums
         /*int num1 = 50, num2 = 3;
         int div = num1 / num2;
         System.out.println(div);*/
 
-        //ARITH OPERATIONS
+    //ARITH OPERATIONS
         /*int a = -5, b = 8, c = 6;
         int d = 55, e = 9;
         int f = 20, g = -3, h = 5;
@@ -32,7 +32,7 @@ public class Basic {
         int result4 = (h + i / j * k - b % j);
         System.out.println(result1 + "\n" + result2 + "\n" + result3 + "\n" + result4);*/
 
-        //PRODUCT OF TWO NUMS
+    //PRODUCT OF TWO NUMS
         /*int num1, num2, prod;
     
         System.out.print("Input first number: ");
@@ -44,7 +44,7 @@ public class Basic {
         prod = num1 * num2;
         System.out.println(num1 + " x "  + num2 + " = " + prod);*/
 
-        //BASIC ARITH OPERATIONS
+    //BASIC ARITH OPERATIONS
         /*int num1, num2;
         int sum, diff, prod, quot, mod;
     
@@ -66,7 +66,7 @@ public class Basic {
         System.out.println(num1 + " / " + num2 + " = "  + quot);
         System.out.println(num1 + " mod " + num2 + " = "  + mod);*/
 
-        //MULTIPLICATION TABLE
+    //MULTIPLICATION TABLE
         /*int num, i, prod;
 
         System.out.print("Input a number: ");
@@ -77,7 +77,7 @@ public class Basic {
             System.out.println(num + " x " + i + " = " + prod);
         }*/
 
-        //PATTERN DISPLAY: JAVA
+    //PATTERN DISPLAY: JAVA
         /*System.out.print("Choose a letter: ");
         char choice = input.next().charAt(0);
         //String choice = input.nextLine();
@@ -86,7 +86,7 @@ public class Basic {
         System.out.println("J  J  aaaaa   V V   aaaaa"); 
         System.out.println(" JJ  a     a   V   a     a");*/
 
-        //EXPRESSION EVAL
+    //EXPRESSION EVAL
         /*double x, y, z, w;
         System.out.println("((x * y - y * y) / (z - w))");
         System.out.print("Enter value for x: ");
@@ -106,7 +106,7 @@ public class Basic {
         System.out.println(result);*/
 
 
-        //AREA PERIMETER: CIRCLE
+    //AREA PERIMETER: CIRCLE
        
         /*System.out.print("Enter radius of circle: ");
         Circle circleForm = new Circle(scan.nextDouble());
@@ -116,14 +116,12 @@ public class Basic {
         System.out.println("Perimeter is = " + circleForm.peri);
         System.out.println("Area is = " + circleForm.area);*/
 
-        //COMPUTE AVG
-        int n;
+    //COMPUTE AVG
+        /*int n;
         double sum = 0, avg;
         System.out.print("How many inputs would you like to enter? : ");
         n = scan.nextInt();
         int[] nums = new int[n];
-
-        //System.out.print("Enter " + n + " numbers (with spaces): ");
         
         for (int i = 0; i < n; i++) {
             System.out.print("Enter number " + (i + 1) + ": ");
@@ -138,24 +136,30 @@ public class Basic {
         }
 
         avg = sum / nlength;
-        System.out.println("The Average is " + avg);
+        System.out.println("The Average is " + avg);*/
+
+    //AREA PERIMETER: RECTANGLE
+        double l, w, area, peri;
+        //Rectangle rFormula = new Rectangle();
+        System.out.print("Enter length of rectangle: ");
+        l = scan.nextDouble();
+        System.out.print("Enter width of rectangle: ");
+        w = scan.nextDouble();
+
+        area = Rectangle.calcArea(l, w);
+        peri = Rectangle.calcPeri(l, w);
+
+        //System.out.println("Area is = " + area);
+        //System.out.println("Perimeter is = " + peri);
+        System.out.printf("Area is = %.2f \n ", area);
+        System.out.printf("Perimeter is = %.1f ", peri);
+
+
 
         
 
 
 
-
-
-
-        
-
-        
-        
-
-    
-        
-        
- 
 
 
 
