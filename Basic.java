@@ -153,7 +153,7 @@ public class Basic {
         System.out.printf("Perimeter is = %.2f ", peri);*/
 
         //Using object
-        System.out.print("Enter the length: ");
+        /*System.out.print("Enter the length: ");
         double l = scan.nextDouble();
         System.out.print("Enter the width: ");
         double w = scan.nextDouble();
@@ -162,8 +162,44 @@ public class Basic {
         /*double area = rFormula.calcArea();
         double peri = rFormula.calcPeri();*/
 
-        System.out.printf("Area is  = %.2f ", rFormula.calcArea());
-        System.out.printf("\nPerimeter is = %.2f ", rFormula.calcPeri());
+        /*System.out.printf("Area is  = %.2f ", rFormula.calcArea());
+        System.out.printf("\n Perimeter is = %.2f ", rFormula.calcPeri());*/
+
+
+    //BINARY ADDITION
+        int b1, b2;
+        int i = 0, rem = 0;
+
+        int[] sums = new int[20];
+
+        System.out.print("Enter the first binary: ");
+        b1 = scan.nextInt();
+
+        System.out.print("Enter the second binary: ");
+        b2 = scan.nextInt();
+
+        while (b1 != 0 && b2 != 0) {
+            sums[i++] = (int)((b1 % 10 + b2 % 10 + rem) % 2);
+            rem = (int)((b1 % 10 + b2 % 10 + rem ) / 2);
+            b1 /= 10;
+            b2 /= 10;
+        } 
+
+        if (rem != 0) {
+            sums[i++] = rem;
+        }
+
+        --i;
+
+        System.out.print("The binary sum is ");
+
+        while (i >= 0) {
+            System.out.print(sums[i--]);
+        }
+
+
+
+
 
         
 

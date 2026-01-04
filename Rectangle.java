@@ -1,5 +1,6 @@
 public class Rectangle {
-    double l, w, area, peri;
+    //double l, w, area, peri;
+    double l, w;
 
     public Rectangle(double l, double w) {
         this.l = l;
