@@ -167,56 +167,21 @@ public class Basic {
 
 
     //BINARY ADDITION
-        int b1, b2;
-        int i = 0, rem = 0;
-
-        int[] sums = new int[20];
-
+        
+        //int i = 0, rem = 0;
+        
         System.out.print("Enter the first binary: ");
-        b1 = scan.nextInt();
+        int b1 = scan.nextInt();
 
         System.out.print("Enter the second binary: ");
-        b2 = scan.nextInt();
+        int b2 = scan.nextInt();
 
-        while (b1 != 0 && b2 != 0) {
-            sums[i++] = (int)((b1 % 10 + b2 % 10 + rem) % 2);
-            rem = (int)((b1 % 10 + b2 % 10 + rem ) / 2);
-            b1 /= 10;
-            b2 /= 10;
-        } 
+        Binary addOp = new Binary(b1, b2);
+        addOp.binaryAdd();
 
-        if (rem != 0) {
-            sums[i++] = rem;
+       
         }
-
-        --i;
-
-        System.out.print("The binary sum is ");
-
-        while (i >= 0) {
-            System.out.print(sums[i--]);
-        }
-
-
-
-
-
-        
-
-
-
-
-
-        
-
-
-
-
-
-
-        
-
 
 
     }
-}
+
