@@ -6,7 +6,6 @@ public class Circle {
     }
     
     public void calculateCircle () {
-    
         area = Math.PI * (rad * rad);
         peri = 2 * Math.PI * rad;
     }

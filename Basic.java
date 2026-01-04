@@ -159,8 +159,13 @@ public class Basic {
         double w = scan.nextDouble();
 
         Rectangle rFormula = new Rectangle(l, w);
-        rFormula.calcArea();
-        rFormula.calcPeri();
+        /*double area = rFormula.calcArea();
+        double peri = rFormula.calcPeri();*/
+
+        System.out.printf("Area is  = %.2f ", rFormula.calcArea());
+        System.out.printf("\nPerimeter is = %.2f ", rFormula.calcPeri());
+
+        
 
 
 
